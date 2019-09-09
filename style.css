@@ -1,0 +1,420 @@
+* {
+	padding: 0;
+	margin: 0;
+	font-family: sans-serif, fontAwesome;
+}
+
+body {
+	background-color: #c0c0c0;
+}
+
+header {
+	height: 150px;
+	position: relative;
+	background-color: white;
+}
+
+header #sub-menu {
+	background-color: #0b0e23;
+	height: 20%;
+	position: relative;
+	left: 0%;
+	display: flex;
+}
+
+#sub-menu .icones-s-medias {
+	width: 17%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	margin-left: 5%;
+	justify-content: space-around;
+}
+
+#sub-menu .icones-s-medias a {
+	text-decoration: none;
+	color: white;
+	font-size: 18px;
+}
+
+#login {
+	background-color: #0b0e23;
+	width: 30%;
+	height: 100%;
+	position: relative;
+	left: 43%;
+	display: flex;
+	justify-content: flex-end;
+}
+
+#login ul {
+	display: flex;
+	align-items: center;
+}
+#login ul li {
+	list-style: none;
+	margin-left: 25px;
+}
+
+#login ul li a {
+	text-decoration: none;
+	color: white;
+}
+
+#login ul button {
+	border: none;
+	margin-left: 25px;
+	padding: 5px 10px;
+	color: white;
+	background-color: transparent;
+}
+
+#main-menu {
+	width: 90%;
+	height: 70%;
+	/*background-color: hotpink;*/
+	margin: 7px auto;
+	display: flex;
+	align-items: center;
+}
+
+#main-menu #logo {
+	height: 90%;
+	width: 15%;
+	background-color: #0b0e23;
+}
+
+#main-menu ul {
+	display: flex;
+	margin-left: 60%;
+	align-items: center;
+}
+
+#main-menu ul li {
+	list-style: none;
+	margin-left: 35px;
+}
+
+#main-menu ul li a {
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 14px;
+	color: gray;
+}
+
+#main-menu ul li a:hover {
+	color: black;
+}
+
+#main-menu button {
+	margin-left: 35px;
+	border: none;
+	padding: 5px 10px;
+	font-size: 22px;
+	color: black;
+	background-color: transparent;
+}
+
+#main-menu #contador {
+	width: auto;
+	height: auto;
+	margin-top: -15px;
+	margin-left: -7px;
+	padding: 2px 6px;
+	border-radius: 50%;
+	background-color: red;
+}
+#banner {
+	background-color: #7fc29b; /*que cor bem boa */
+	height: 550px;
+	width: 100%;
+	margin: -75px auto;
+
+}
+
+#compras {
+	height: auto;
+	width: 90%;
+	margin: 115px auto;
+	padding: 15px 15px;
+}
+
+#compras:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+
+.card {
+	background-color: white;
+	height: 320px;
+	width: 220px;
+	margin-top: 15px;
+	margin-left: 20px;
+	position: relative;
+	float: left;
+}
+
+.card:hover {
+
+}
+
+.card .imagem-prod {
+	background-color: #0b0e23;
+	width: 100%;
+	height: 47%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+
+}
+
+.card .addToCart {
+	background-color: #0b0e23;
+	width: 55%;
+	height: 13%;
+	border: none;
+	position: absolute;
+	bottom: 15px;
+	margin: 0 auto;
+	left: 50%;
+	transform: translateX(-50%);
+	font-size: 16px;
+	color: white;
+}
+
+.card p {
+	color: black;
+	font-size: 16px;
+	margin-top: 15px;
+	text-align: center;
+	width: 85%;
+	position: relative;
+	left: 50%;
+	margin-top: 15px;
+	transform: translateX(-50%);
+}
+
+.card p:nth-child(3) {
+	margin-top: 45px;
+	font-size: 20px;
+	width: 55%;
+	color: black;
+	text-align: center;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+
+}
+
+card p .nome {
+	color: orange;
+	background-color: red;
+}
+
+#myCart {
+	background-color: white;
+	width: 70%;
+	height: 450px;
+	margin: 10 auto;
+	position: fixed;
+	top: 180px;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 1;
+	display: none;
+	overflow-x: auto;
+}
+
+#myCart .close {
+	height: 12%;
+	width: 100%;
+	position: relative;
+	background-color: #0b0e23;
+	display: flex;
+	justify-content: flex-end;
+}
+
+#myCart .close #btn-close {
+	border: none;
+	height: 100%;
+	width: 8%;
+	background-color: #0b0e23;
+	font-size: 36px;
+	color: white;
+}
+
+
+#totalFinal p {
+	text-align: center;
+	font-size: 22px;
+	height: 40%;
+	display: flex;
+	align-items: center;
+	justify-content: center;	
+}
+
+#totalFinal button {
+	border: none;
+	width: 100%;
+	height: 45%;
+	margin-top: 10%;
+	background-color: #0b0e23;; 
+	color: white;
+	font-size: 20px;
+}
+
+
+
+footer {
+	background-color: #0b0e23;
+	height: 70px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+footer #copyright {
+	height: 50%;
+	width: 50%;
+	color: white;
+	font-size: 18px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+table {
+	text-align: center;
+	border-spacing: 15px;
+}
+
+table td {
+	padding: 8px;
+}
+
+.qtd_prod {
+	display: block;
+	padding: 0;
+	margin: 0;
+	border: 1px solid black;
+	width: 30%;
+	left: 50%;
+	position: relative;
+	transform: translateX(-50%);
+}
+
+.inputQtd {
+	margin: 0;
+	padding: 0;
+}
+
+#totalFinal {
+	width: 250px;
+	height: 150px;
+	margin-top: 50px;
+	margin-left: 70%;
+	display: none;
+}
+
+#totalFinal p {
+	text-align: center;
+	font-size: 22px;
+	height: 20%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#totalFinal button {
+	border: none;
+	width: 100%;
+	height: 45%;
+	background-color: #0b0e23;; 
+	color: white;
+	font-size: 20px;
+}
+
+#tabela {
+	display: none;
+}
+
+#pedidos {
+	background-color: red;
+	font-size: 16px;
+}
+
+#request {
+	background-color: white;
+	width: 60%;
+	height: 450px;
+	margin: 10 auto;
+	position: fixed;
+	top: 180px;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 1;
+	display: none;
+	overflow-x: auto;
+}
+
+#request .close {
+	height: 12%;
+	width: 100%;
+	position: relative;
+	background-color: #0b0e23;
+	display: flex;
+	justify-content: flex-end;
+}
+
+#request .close #button-close {
+	border: none;
+	height: 100%;
+	width: 8%;
+	background-color: #0b0e23;
+	font-size: 36px;
+	color: white;
+}
+
+
+#lista {
+	margin-top: 25px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+
+
+
+.conteudo {  /*div principal do conteúdo onde vai conter a section que terá o conteúdo propriamente dito */
+	background-color: white;
+	width: 100%;
+	height: auto;
+	padding: 15px 0;
+	/*margin: 15px auto;*/
+	margin-top: 76px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+section .post {
+	margin-top: 30px;
+	text-align: justify;
+}
+
+
+section {
+	width: 95%;
+	margin: 45px auto 25px auto;
+	position: relative;
+	min-height: auto;
+}
+
+section h1 {
+	text-align: center;
+	font-size: 28px;
+}
